@@ -7,6 +7,7 @@
 
 import UIKit
 
+//Controller to show and find episode
 class EpisodeViewController: UIViewController {
 
     override func viewDidLoad() {

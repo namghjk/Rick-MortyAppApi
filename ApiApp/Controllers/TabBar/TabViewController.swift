@@ -7,8 +7,8 @@
 
 import UIKit
 
-class TabViewController: UITabBarController {
-
+/// Controller to house tabs and root tabs
+final class TabViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red

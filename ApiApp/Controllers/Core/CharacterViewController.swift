@@ -7,6 +7,7 @@
 
 import UIKit
 
+//Controller to show and find character
 class CharacterViewController: UIViewController {
 
     override func viewDidLoad() {
