@@ -16,11 +16,9 @@ class CharacterViewController: UIViewController {
         
         let request = Request(
             endpoint: .character
-            ,pathComponents: ["2"]
-//            ,queryParameters:[
-//                URLQueryItem(name: "name", value: "rick"),
-//                URLQueryItem(name: "status", value: "alive")
-//            ]
+//            ,pathComponents: ["2"]
+            ,queryParameters:[URLQueryItem(name: "name", value: "rick"),
+          URLQueryItem(name: "status", value: "alive")]
         )
         print(request.url)
     }

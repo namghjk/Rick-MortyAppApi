@@ -21,7 +21,7 @@ final class Request {
     //Path components for API, if any
     private let pathComponents: Set<String>
     
-    //Querry arguments for APIm if any
+    //Querry arguments for API if any
     private let queryParameters: [URLQueryItem]
     
     
