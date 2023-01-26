@@ -10,7 +10,7 @@ import Foundation
 
 /// Represents unique API Endpoint
 @frozen enum Endpoint: String{
-    case Character // Character info
-    case Location // Location info
-    case Episode // Episode info
+    case character // Character info
+    case location // Location info
+    case episode // Episode info
 }

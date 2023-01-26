@@ -12,8 +12,17 @@ class CharacterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         title = "Character"
+        
+        let request = Request(
+            endpoint: .character
+            ,pathComponents: ["2"]
+//            ,queryParameters:[
+//                URLQueryItem(name: "name", value: "rick"),
+//                URLQueryItem(name: "status", value: "alive")
+//            ]
+        )
+        print(request.url)
     }
 
 

@@ -28,9 +28,10 @@ final class TabViewController: UITabBarController {
         LocationVC.navigationItem.largeTitleDisplayMode = .automatic
         
         let nav1 = UINavigationController(rootViewController: charactersVC)
-        let nav3 = UINavigationController(rootViewController: EpisodeVC)
-        let nav4 = UINavigationController(rootViewController: SettingVC)
-        let nav2 = UINavigationController(rootViewController: LocationVC)
+        let nav2 = UINavigationController(rootViewController: EpisodeVC)
+        let nav3 = UINavigationController(rootViewController: SettingVC)
+        let nav4 = UINavigationController(rootViewController: LocationVC)
+       
         
         nav1.tabBarItem = UITabBarItem(title: "Character", image: UIImage(systemName: "person"), tag: 1)
         nav2.tabBarItem = UITabBarItem(title: "Episode", image: UIImage(systemName: "tv"), tag: 2)

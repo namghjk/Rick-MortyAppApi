@@ -170,14 +170,14 @@
 		DEDF3DA529797CD300A55ABD /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				DEDF3DA629797CFD00A55ABD /* LocationViewController.swift */,
-				DEDF3DA729797CFD00A55ABD /* LocationViewController.xib */,
+				DEDF3DA129797CAE00A55ABD /* CharacterViewController.swift */,
+				DEDF3DA229797CAE00A55ABD /* CharacterViewController.xib */,
 				DEDF3DAC29797D1C00A55ABD /* EpisodeViewController.swift */,
 				DEDF3DAD29797D1C00A55ABD /* EpisodeViewController.xib */,
 				DEDF3DB229797D4E00A55ABD /* SettingViewController.swift */,
 				DEDF3DB329797D4E00A55ABD /* SettingViewController.xib */,
-				DEDF3DA129797CAE00A55ABD /* CharacterViewController.swift */,
-				DEDF3DA229797CAE00A55ABD /* CharacterViewController.xib */,
+				DEDF3DA629797CFD00A55ABD /* LocationViewController.swift */,
+				DEDF3DA729797CFD00A55ABD /* LocationViewController.xib */,
 			);
 			path = Core;
 			sourceTree = "<group>";
