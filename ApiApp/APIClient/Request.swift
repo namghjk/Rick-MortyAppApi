@@ -50,7 +50,7 @@ final class Request {
         return string
     }
     
-    /// The last step construct api URL
+    ///Converte String to URL
     public var url : URL?{
         return URL(string: urlString)
     }
