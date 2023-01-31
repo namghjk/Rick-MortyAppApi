@@ -9,7 +9,7 @@ import Foundation
  
 struct Episode:Codable{
     
-    let id: Int
+    let id: UUID
     let name: String
     let type: String
     let dimension: String

@@ -8,7 +8,7 @@
 import Foundation
 
 struct Location: Codable{
-    let id: Int
+    let id: UUID
     let name: String
     let type: String
     let dimension: String

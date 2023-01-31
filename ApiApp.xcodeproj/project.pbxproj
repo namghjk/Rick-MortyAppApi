@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2E8F232988E86900568BAB /* GetAllCharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E8F222988E86900568BAB /* GetAllCharacterResponse.swift */; };
 		DE90FAE32979174700FFDDE6 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90FAE12979174700FFDDE6 /* TabViewController.swift */; };
 		DEA5D52C29790A7A00C422B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5D52B29790A7A00C422B0 /* AppDelegate.swift */; };
 		DEA5D52E29790A7A00C422B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5D52D29790A7A00C422B0 /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE2E8F222988E86900568BAB /* GetAllCharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharacterResponse.swift; sourceTree = "<group>"; };
 		DE90FAE12979174700FFDDE6 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		DEA5D52829790A7A00C422B0 /* ApiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA5D52B29790A7A00C422B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE2E8F202988E82E00568BAB /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				DEA5D5492979117A00C422B0 /* Location.swift */,
+				DEA5D54D297911C300C422B0 /* Episode.swift */,
+				DEA5D54B297911AB00C422B0 /* Character.swift */,
+				DEC78BE12980515E00C85D05 /* Origin.swift */,
+				DEC78BE3298051F000C85D05 /* SingleLocation.swift */,
+				DEC78BE52980530500C85D05 /* CharacterStatus.swift */,
+				DEC78BE72980533000C85D05 /* CharacterGenderGender.swift */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		DE2E8F212988E83E00568BAB /* ApiRequestTypes */ = {
+			isa = PBXGroup;
+			children = (
+				DE2E8F222988E86900568BAB /* GetAllCharacterResponse.swift */,
+			);
+			path = ApiRequestTypes;
+			sourceTree = "<group>";
+		};
 		DEA5D51F29790A7A00C422B0 = {
 			isa = PBXGroup;
 			children = (
@@ -120,13 +144,8 @@
 		DEA5D545297910B800C422B0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				DEA5D5492979117A00C422B0 /* Location.swift */,
-				DEA5D54D297911C300C422B0 /* Episode.swift */,
-				DEA5D54B297911AB00C422B0 /* Character.swift */,
-				DEC78BE12980515E00C85D05 /* Origin.swift */,
-				DEC78BE3298051F000C85D05 /* SingleLocation.swift */,
-				DEC78BE52980530500C85D05 /* CharacterStatus.swift */,
-				DEC78BE72980533000C85D05 /* CharacterGenderGender.swift */,
+				DE2E8F212988E83E00568BAB /* ApiRequestTypes */,
+				DE2E8F202988E82E00568BAB /* DataTypes */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -261,6 +280,7 @@
 				DEC78BDE297FA63D00C85D05 /* Request.swift in Sources */,
 				DEDF3DAE29797D1C00A55ABD /* EpisodeViewController.swift in Sources */,
 				DEC78BE0297FA64600C85D05 /* Endpoint.swift in Sources */,
+				DE2E8F232988E86900568BAB /* GetAllCharacterResponse.swift in Sources */,
 				DEA5D54E297911C300C422B0 /* Episode.swift in Sources */,
 				DEC78BDC297FA63400C85D05 /* Services.swift in Sources */,
 				DEDF3DA329797CAE00A55ABD /* CharacterViewController.swift in Sources */,

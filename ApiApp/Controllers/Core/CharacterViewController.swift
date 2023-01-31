@@ -13,17 +13,17 @@ class CharacterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Character"
-        
-        let request = Request(
-            endpoint: .character
-//            ,pathComponents: ["2"]
-            ,queryParameters:[URLQueryItem(name: "name", value: "rick"),
-          URLQueryItem(name: "status", value: "alive")]
-        )
-        print(request.url)
+  
+        Services.shared.execute(.listAllCharactersResquests, expecting: GetAllCharaterResponse .self) { result in
+            switch result {
+            case .success(let model):
+                print("Total: " + String(model.info.count))
+                print("Pages result count: " + String(model.results.count))
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
+      
     }
-
-
- 
-
+  
 }
