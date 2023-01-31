@@ -21,7 +21,7 @@ class CharacterViewController: UIViewController {
                 print("Pages result count: " + String(model.results.count))
             case .failure(let error):
                 print(String(describing: error))
-
+                print("123")
             }
         }
       
