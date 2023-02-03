@@ -23,8 +23,10 @@
 		DEC78BE4298051F000C85D05 /* SingleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC78BE3298051F000C85D05 /* SingleLocation.swift */; };
 		DEC78BE62980530500C85D05 /* CharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC78BE52980530500C85D05 /* CharacterStatus.swift */; };
 		DEC78BE82980533000C85D05 /* CharacterGenderGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC78BE72980533000C85D05 /* CharacterGenderGender.swift */; };
-		DEDF3DA329797CAE00A55ABD /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3DA129797CAE00A55ABD /* CharacterViewController.swift */; };
-		DEDF3DA429797CAE00A55ABD /* CharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF3DA229797CAE00A55ABD /* CharacterViewController.xib */; };
+		DEDBBA4D298BE82A00FAAE9B /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDBBA4B298BE82A00FAAE9B /* CharacterViewController.swift */; };
+		DEDBBA4E298BE82A00FAAE9B /* CharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDBBA4C298BE82A00FAAE9B /* CharacterViewController.xib */; };
+		DEDBBA52298BE9C600FAAE9B /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDBBA51298BE9C600FAAE9B /* CharacterListView.swift */; };
+		DEDBBA54298BF21F00FAAE9B /* CharacterListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDBBA53298BF21F00FAAE9B /* CharacterListView.xib */; };
 		DEDF3DA829797CFD00A55ABD /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3DA629797CFD00A55ABD /* LocationViewController.swift */; };
 		DEDF3DA929797CFD00A55ABD /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF3DA729797CFD00A55ABD /* LocationViewController.xib */; };
 		DEDF3DAE29797D1C00A55ABD /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3DAC29797D1C00A55ABD /* EpisodeViewController.swift */; };
@@ -52,8 +54,10 @@
 		DEC78BE3298051F000C85D05 /* SingleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLocation.swift; sourceTree = "<group>"; };
 		DEC78BE52980530500C85D05 /* CharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStatus.swift; sourceTree = "<group>"; };
 		DEC78BE72980533000C85D05 /* CharacterGenderGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGenderGender.swift; sourceTree = "<group>"; };
-		DEDF3DA129797CAE00A55ABD /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
-		DEDF3DA229797CAE00A55ABD /* CharacterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterViewController.xib; sourceTree = "<group>"; };
+		DEDBBA4B298BE82A00FAAE9B /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		DEDBBA4C298BE82A00FAAE9B /* CharacterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterViewController.xib; sourceTree = "<group>"; };
+		DEDBBA51298BE9C600FAAE9B /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterListView.swift; path = ApiApp/Controllers/Core/CharacterListView.swift; sourceTree = SOURCE_ROOT; };
+		DEDBBA53298BF21F00FAAE9B /* CharacterListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CharacterListView.xib; path = ApiApp/Controllers/Core/CharacterListView.xib; sourceTree = SOURCE_ROOT; };
 		DEDF3DA629797CFD00A55ABD /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		DEDF3DA729797CFD00A55ABD /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
 		DEDF3DAC29797D1C00A55ABD /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DEA5D548297910E100C422B0 /* Views */,
+				DEB33875298A1CEB002A363C /* Models */,
 				DEA5D547297910D300C422B0 /* Resources */,
 				DEA5D546297910C300C422B0 /* APIClient */,
 				DEA5D545297910B800C422B0 /* ViewModel */,
@@ -144,8 +149,6 @@
 		DEA5D545297910B800C422B0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				DE2E8F212988E83E00568BAB /* ApiRequestTypes */,
-				DE2E8F202988E82E00568BAB /* DataTypes */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -174,6 +177,8 @@
 		DEA5D548297910E100C422B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DEDBBA51298BE9C600FAAE9B /* CharacterListView.swift */,
+				DEDBBA53298BF21F00FAAE9B /* CharacterListView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,11 +191,20 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		DEB33875298A1CEB002A363C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE2E8F212988E83E00568BAB /* ApiRequestTypes */,
+				DE2E8F202988E82E00568BAB /* DataTypes */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DEDF3DA529797CD300A55ABD /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				DEDF3DA129797CAE00A55ABD /* CharacterViewController.swift */,
-				DEDF3DA229797CAE00A55ABD /* CharacterViewController.xib */,
+				DEDBBA4B298BE82A00FAAE9B /* CharacterViewController.swift */,
+				DEDBBA4C298BE82A00FAAE9B /* CharacterViewController.xib */,
 				DEDF3DAC29797D1C00A55ABD /* EpisodeViewController.swift */,
 				DEDF3DAD29797D1C00A55ABD /* EpisodeViewController.xib */,
 				DEDF3DB229797D4E00A55ABD /* SettingViewController.swift */,
@@ -259,9 +273,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDBBA54298BF21F00FAAE9B /* CharacterListView.xib in Resources */,
 				DEDF3DAF29797D1C00A55ABD /* EpisodeViewController.xib in Resources */,
+				DEDBBA4E298BE82A00FAAE9B /* CharacterViewController.xib in Resources */,
 				DEDF3DB529797D4E00A55ABD /* SettingViewController.xib in Resources */,
-				DEDF3DA429797CAE00A55ABD /* CharacterViewController.xib in Resources */,
 				DEA5D53829790A7B00C422B0 /* LaunchScreen.storyboard in Resources */,
 				DEA5D53529790A7B00C422B0 /* Assets.xcassets in Resources */,
 				DEDF3DA929797CFD00A55ABD /* LocationViewController.xib in Resources */,
@@ -282,8 +297,8 @@
 				DEC78BE0297FA64600C85D05 /* Endpoint.swift in Sources */,
 				DE2E8F232988E86900568BAB /* GetAllCharacterResponse.swift in Sources */,
 				DEA5D54E297911C300C422B0 /* Episode.swift in Sources */,
+				DEDBBA52298BE9C600FAAE9B /* CharacterListView.swift in Sources */,
 				DEC78BDC297FA63400C85D05 /* Services.swift in Sources */,
-				DEDF3DA329797CAE00A55ABD /* CharacterViewController.swift in Sources */,
 				DEA5D54A2979117A00C422B0 /* Location.swift in Sources */,
 				DEDF3DB429797D4E00A55ABD /* SettingViewController.swift in Sources */,
 				DE90FAE32979174700FFDDE6 /* TabViewController.swift in Sources */,
@@ -291,6 +306,7 @@
 				DEA5D52E29790A7A00C422B0 /* SceneDelegate.swift in Sources */,
 				DEDF3DA829797CFD00A55ABD /* LocationViewController.swift in Sources */,
 				DEC78BE22980515E00C85D05 /* Origin.swift in Sources */,
+				DEDBBA4D298BE82A00FAAE9B /* CharacterViewController.swift in Sources */,
 				DEC78BE4298051F000C85D05 /* SingleLocation.swift in Sources */,
 				DEC78BE82980533000C85D05 /* CharacterGenderGender.swift in Sources */,
 			);
