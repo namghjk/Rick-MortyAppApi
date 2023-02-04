@@ -4,35 +4,56 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterListView" customModule="ApiApp" customModuleProvider="target">
             <connections>
+                <outlet property="CollectionView" destination="76O-Oz-fJI" id="XsH-sv-bkm"/>
                 <outlet property="ContentView" destination="iN0-l3-epB" id="963-xp-jMu"/>
                 <outlet property="spinner" destination="BBU-pm-2tu" id="VCW-zT-f93"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="536" height="577"/>
+            <rect key="frame" x="0.0" y="0.0" width="534" height="467"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="BBU-pm-2tu">
-                    <rect key="frame" x="218" y="238.66666666666663" width="100" height="100"/>
+                    <rect key="frame" x="217" y="183.66666666666666" width="100" height="99.999999999999972"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="AuE-ha-i25"/>
                         <constraint firstAttribute="height" constant="100" id="qiC-ei-l7a"/>
                     </constraints>
                 </activityIndicatorView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="76O-Oz-fJI">
+                    <rect key="frame" x="0.0" y="59" width="534" height="374"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="p9n-jV-Xeh">
+                        <size key="itemSize" width="120" height="150"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="76O-Oz-fJI" secondAttribute="bottom" id="1v0-C4-FJZ"/>
                 <constraint firstItem="BBU-pm-2tu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9sB-Jg-VhV"/>
                 <constraint firstItem="BBU-pm-2tu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="F3m-OC-AKp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="76O-Oz-fJI" secondAttribute="trailing" id="OBw-2j-eDc"/>
+                <constraint firstItem="76O-Oz-fJI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Shf-AG-L35"/>
+                <constraint firstItem="76O-Oz-fJI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bLL-Lr-lyP"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="174.04580152671755" y="194.01408450704227"/>
+            <point key="canvasLocation" x="172.51908396946564" y="206.69014084507043"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

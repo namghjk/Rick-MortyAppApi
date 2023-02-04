@@ -9,26 +9,48 @@ import UIKit
 
 class CharacterViewController: UIViewController {
 
+  
     
     @IBOutlet weak var CharacterListView: CharacterListView!
+    
+    private let viewModel = CharacterListViewModel()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Character"
         
-        CharacterListView.spinner.startAnimating()
-      
         
-        Services.shared.execute(.listAllCharactersResquests, expecting: GetAllCharaterResponse .self) { result in
-            switch result {
-            case .success(let model):
-                print("Total: " + String(model.info.count))
-                print("Pages result count: " + String(model.results.count))
-            case .failure(let error):
-                print(String(describing: error))
+        //spinner
+        CharacterListView.spinner.startAnimating()
+    
+        //CollectionView
+        setUpCollectionView()
+        
+        //Show UP collectionView
+        AppearCollectionView()
+    }
+    
+    
+    //setUpCollectionView
+    private func setUpCollectionView(){
+        CharacterListView.CollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        CharacterListView.CollectionView.isHidden = true
+        CharacterListView.CollectionView.dataSource = viewModel
+        CharacterListView.CollectionView.alpha = 0
+        
+    }
+    
+    
+    //Hide spinner and Show up CollectionView
+    private func AppearCollectionView(){
+        DispatchQueue.main.asyncAfter(deadline: .now()+2, execute: {
+            self.CharacterListView.spinner.stopAnimating()
+            self.CharacterListView.CollectionView.isHidden = false
+            UIView.animate(withDuration: 0.4){
+                self.CharacterListView.CollectionView.alpha = 1.0
             }
-        }
-      
+        })
     }
 
 }

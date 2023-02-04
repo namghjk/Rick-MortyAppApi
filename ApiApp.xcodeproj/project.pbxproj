@@ -33,6 +33,7 @@
 		DEDF3DAF29797D1C00A55ABD /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF3DAD29797D1C00A55ABD /* EpisodeViewController.xib */; };
 		DEDF3DB429797D4E00A55ABD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3DB229797D4E00A55ABD /* SettingViewController.swift */; };
 		DEDF3DB529797D4E00A55ABD /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF3DB329797D4E00A55ABD /* SettingViewController.xib */; };
+		DEFC152F298E1FD100C62996 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC152E298E1FD100C62996 /* CharacterListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		DEDF3DAD29797D1C00A55ABD /* EpisodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
 		DEDF3DB229797D4E00A55ABD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DEDF3DB329797D4E00A55ABD /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		DEFC152E298E1FD100C62996 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		DEA5D545297910B800C422B0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DEFC152E298E1FD100C62996 /* CharacterListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				DE2E8F232988E86900568BAB /* GetAllCharacterResponse.swift in Sources */,
 				DEA5D54E297911C300C422B0 /* Episode.swift in Sources */,
 				DEDBBA52298BE9C600FAAE9B /* CharacterListView.swift in Sources */,
+				DEFC152F298E1FD100C62996 /* CharacterListViewModel.swift in Sources */,
 				DEC78BDC297FA63400C85D05 /* Services.swift in Sources */,
 				DEA5D54A2979117A00C422B0 /* Location.swift in Sources */,
 				DEDF3DB429797D4E00A55ABD /* SettingViewController.swift in Sources */,

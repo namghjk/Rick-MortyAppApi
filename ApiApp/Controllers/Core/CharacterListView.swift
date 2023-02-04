@@ -12,12 +12,12 @@ final class CharacterListView: UIView {
     
     @IBOutlet var ContentView: UIView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var CollectionView: UICollectionView!
+   
+    private let viewModel = CharacterListViewModel()
     
-  
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubview(spinner)
-        spinner.startAnimating()
         translatesAutoresizingMaskIntoConstraints=false
         setUpView()
         
@@ -26,6 +26,7 @@ final class CharacterListView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setUpView()
+       
     }
     
     private func setUpView(){
@@ -34,8 +35,11 @@ final class CharacterListView: UIView {
         ContentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         ContentView.translatesAutoresizingMaskIntoConstraints = true
         ContentView.frame = bounds
-        ContentView.backgroundColor = .systemBackground
+        ContentView.backgroundColor = .red
+        
+        viewModel.fetchCharacter()
     }
     
+   
     
 }
