@@ -35,6 +35,8 @@ class CharacterViewController: UIViewController {
     //setUpCollectionView
     private func setUpCollectionView(){
         CharacterListView.CollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        CharacterListView.CollectionView.dataSource = viewModel
+        CharacterListView.CollectionView.delegate =  viewModel
         CharacterListView.CollectionView.isHidden = true
         CharacterListView.CollectionView.dataSource = viewModel
         CharacterListView.CollectionView.alpha = 0
