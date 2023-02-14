@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE04BE00299A0F8600E7D89E /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04BDFE299A0F8600E7D89E /* CharacterCollectionViewCell.swift */; };
+		DE04BE01299A0F8600E7D89E /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE04BDFF299A0F8600E7D89E /* CharacterCollectionViewCell.xib */; };
+		DE04BE03299A7FA800E7D89E /* CharacterCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04BE02299A7FA800E7D89E /* CharacterCollectionViewCellModel.swift */; };
 		DE2E8F232988E86900568BAB /* GetAllCharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E8F222988E86900568BAB /* GetAllCharacterResponse.swift */; };
 		DE90FAE32979174700FFDDE6 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90FAE12979174700FFDDE6 /* TabViewController.swift */; };
 		DEA5D52C29790A7A00C422B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5D52B29790A7A00C422B0 /* AppDelegate.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE04BDFE299A0F8600E7D89E /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE04BDFF299A0F8600E7D89E /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE04BE02299A7FA800E7D89E /* CharacterCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		DE2E8F222988E86900568BAB /* GetAllCharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharacterResponse.swift; sourceTree = "<group>"; };
 		DE90FAE12979174700FFDDE6 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		DEA5D52829790A7A00C422B0 /* ApiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE04BDFD299A0F5B00E7D89E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DE04BDFE299A0F8600E7D89E /* CharacterCollectionViewCell.swift */,
+				DE04BDFF299A0F8600E7D89E /* CharacterCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		DE2E8F202988E82E00568BAB /* DataTypes */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +135,7 @@
 		DEA5D52A29790A7A00C422B0 /* ApiApp */ = {
 			isa = PBXGroup;
 			children = (
+				DE04BDFD299A0F5B00E7D89E /* Cell */,
 				DEA5D548297910E100C422B0 /* Views */,
 				DEB33875298A1CEB002A363C /* Models */,
 				DEA5D547297910D300C422B0 /* Resources */,
@@ -152,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				DEFC152E298E1FD100C62996 /* CharacterListViewModel.swift */,
+				DE04BE02299A7FA800E7D89E /* CharacterCollectionViewCellModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +297,7 @@
 				DEDF3DAF29797D1C00A55ABD /* EpisodeViewController.xib in Resources */,
 				DEDBBA4E298BE82A00FAAE9B /* CharacterViewController.xib in Resources */,
 				DEDF3DB529797D4E00A55ABD /* SettingViewController.xib in Resources */,
+				DE04BE01299A0F8600E7D89E /* CharacterCollectionViewCell.xib in Resources */,
 				DEA5D53829790A7B00C422B0 /* LaunchScreen.storyboard in Resources */,
 				DEA5D53529790A7B00C422B0 /* Assets.xcassets in Resources */,
 				DEDF3DA929797CFD00A55ABD /* LocationViewController.xib in Resources */,
@@ -299,6 +317,7 @@
 				DEDF3DAE29797D1C00A55ABD /* EpisodeViewController.swift in Sources */,
 				DEC78BE0297FA64600C85D05 /* Endpoint.swift in Sources */,
 				DE2E8F232988E86900568BAB /* GetAllCharacterResponse.swift in Sources */,
+				DE04BE00299A0F8600E7D89E /* CharacterCollectionViewCell.swift in Sources */,
 				DEA5D54E297911C300C422B0 /* Episode.swift in Sources */,
 				DEDBBA52298BE9C600FAAE9B /* CharacterListView.swift in Sources */,
 				DEFC152F298E1FD100C62996 /* CharacterListViewModel.swift in Sources */,
@@ -306,6 +325,7 @@
 				DEA5D54A2979117A00C422B0 /* Location.swift in Sources */,
 				DEDF3DB429797D4E00A55ABD /* SettingViewController.swift in Sources */,
 				DE90FAE32979174700FFDDE6 /* TabViewController.swift in Sources */,
+				DE04BE03299A7FA800E7D89E /* CharacterCollectionViewCellModel.swift in Sources */,
 				DEA5D54C297911AB00C422B0 /* Character.swift in Sources */,
 				DEA5D52E29790A7A00C422B0 /* SceneDelegate.swift in Sources */,
 				DEDF3DA829797CFD00A55ABD /* LocationViewController.swift in Sources */,

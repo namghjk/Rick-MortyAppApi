@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterCell" id="gTV-IL-0wX" customClass="CharacterCollectionViewCell" customModule="ApiApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="356"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="313" height="356"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.rectangle.on.folder.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-h3-V8k">
+                        <rect key="frame" x="0.0" y="0.6666666666666714" width="314.33333333333331" height="172"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="gm8-oF-zbB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="12314" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dck-bN-eWF">
+                        <rect key="frame" x="30" y="179" width="253" height="38.333333333333343"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pb-q8-ZAq">
+                        <rect key="frame" x="10" y="225" width="293" height="121"/>
+                        <string key="text">This is not a bug. It is a misunderstanding of how Objective-C libraries are imported into Swift. It should be understood how Swift imports code (even from the Apple UIKIt Libraries) from Objective-C into Swift.
+
+UILayoutPriority is a float. In Objective-C, a couple of values have been pre-defined for us. The pre-defined values appear to be an enum. We might expect that the same enums would be available to us in Swift.
+
+The documentation does seem to imply an enum:
+
+SWIFT (Documentation)</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2Pb-q8-ZAq" secondAttribute="trailing" constant="10" id="0dG-TP-gxD"/>
+                <constraint firstItem="2Pb-q8-ZAq" firstAttribute="top" secondItem="dck-bN-eWF" secondAttribute="bottom" constant="5" id="Dz3-pl-Smk"/>
+                <constraint firstItem="dck-bN-eWF" firstAttribute="top" secondItem="xm3-h3-V8k" secondAttribute="bottom" constant="5" id="IkF-uG-gem"/>
+                <constraint firstAttribute="bottom" secondItem="2Pb-q8-ZAq" secondAttribute="bottom" constant="10" id="JAs-8S-ZZz"/>
+                <constraint firstItem="xm3-h3-V8k" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Pzd-va-sO3"/>
+                <constraint firstItem="xm3-h3-V8k" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.488599" id="UZO-v3-bXN"/>
+                <constraint firstItem="2Pb-q8-ZAq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="eva-xe-fhv"/>
+                <constraint firstAttribute="trailing" secondItem="xm3-h3-V8k" secondAttribute="trailing" id="hnU-La-RHY"/>
+                <constraint firstItem="dck-bN-eWF" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="hoI-5R-hJr"/>
+                <constraint firstItem="dck-bN-eWF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="qt1-kL-eBD"/>
+                <constraint firstItem="xm3-h3-V8k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wU1-uq-6jL"/>
+                <constraint firstAttribute="trailing" secondItem="dck-bN-eWF" secondAttribute="trailing" constant="30" id="yQP-gG-9b2"/>
+            </constraints>
+            <size key="customSize" width="313" height="356"/>
+            <connections>
+                <outlet property="ImageView" destination="xm3-h3-V8k" id="3zr-bx-1Mq"/>
+                <outlet property="nameLabel" destination="dck-bN-eWF" id="ulS-67-tht"/>
+                <outlet property="statusLabel" destination="2Pb-q8-ZAq" id="ju0-CK-mla"/>
+            </connections>
+            <point key="canvasLocation" x="235.87786259541983" y="-46.478873239436624"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus.rectangle.on.folder.fill" catalog="system" width="128" height="95"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

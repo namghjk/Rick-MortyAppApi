@@ -30,8 +30,22 @@ extension CharacterListViewModel: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .blue
+        
+        collectionView.register( UINib(nibName: "CharacterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CharacterCell")
+        
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "CharacterCell",
+            for: indexPath
+        ) as! CharacterCollectionViewCell
+        
+        let viewModel = CharacterCollectioViewCellModel(
+            characterName: "Afraz",
+            characterStatus: .alive,
+            characterImageUrl: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg"))
+      
+        cell.configure(with: viewModel)
+        
+        
         return cell
     }
     
