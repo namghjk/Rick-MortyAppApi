@@ -45,8 +45,7 @@ final class Request {
             
            string += argumentString
         }
-        
-        
+
         return string
     }
     
