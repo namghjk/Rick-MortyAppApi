@@ -28,7 +28,6 @@ final class CharacterListView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-       
         setUpView()
        
     }
@@ -39,16 +38,13 @@ final class CharacterListView: UIView {
             ContentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             ContentView.translatesAutoresizingMaskIntoConstraints = true
             ContentView.frame = bounds
-            ContentView.backgroundColor = .red
+        
+           
           
-       
     }
     
-  
-
-
- 
     
    
-    
 }
+
+

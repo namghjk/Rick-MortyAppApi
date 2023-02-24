@@ -25,6 +25,7 @@ class CharacterCollectionViewCell: UICollectionViewCell {
         self.addSubview(ImageView)
         self.addSubview(statusLabel)
         self.addSubview(nameLabel)
+        ImageView.clipsToBounds = true
     }
     
     required init?(coder: NSCoder) {

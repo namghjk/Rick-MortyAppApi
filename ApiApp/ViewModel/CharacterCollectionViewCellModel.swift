@@ -31,7 +31,7 @@ final class CharacterCollectioViewCellModel {
     }
     
     public var characterStatusText: String {
-        return characterStatus.rawValue
+        return "Status:\(characterStatus.rawValue)"
     }
     
     public func fecthImage(completion: @escaping (Result<Data,Error>)-> Void){

@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol CharacterListViewModelDelegate: AnyObject{
+    func didLoadInitialCharacter()
+}
 
 final class CharacterListViewModel:NSObject{
+    
+    public weak var delegate: CharacterListViewModelDelegate?
     
     private var characters: [Character] = [] {
             didSet {
@@ -42,6 +47,9 @@ final class CharacterListViewModel:NSObject{
                 case .success(let responseModel):
                     let results = responseModel.results
                     self?.characters = results
+                    DispatchQueue.main.async {
+                        self?.delegate?.didLoadInitialCharacter()
+                    }
                 case .failure(let error):
                     print(String(describing: error))
                 }
@@ -54,7 +62,7 @@ final class CharacterListViewModel:NSObject{
     
 }
 
-extension CharacterListViewModel: UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
+extension CharacterListViewModel: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate{
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -68,9 +76,12 @@ extension CharacterListViewModel: UICollectionViewDataSource, UICollectionViewDe
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: "CharacterCell",
             for: indexPath
+            
         ) as! CharacterCollectionViewCell
         
         cell.layer.cornerRadius = 8
+        
+        cell.backgroundColor = .systemGray
         
         cell.configure(with: cellViewModels[indexPath.row])
        

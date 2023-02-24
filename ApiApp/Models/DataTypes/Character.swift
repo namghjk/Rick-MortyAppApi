@@ -25,6 +25,7 @@ struct Character: Codable{
 
 
 
+
 //{
 //  "info: {
 //    "count": 826,
